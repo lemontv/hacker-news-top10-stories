@@ -1,0 +1,69 @@
+.stories {
+  padding: 40px;
+
+  .story {
+    max-width: 980px;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(black, .24);
+
+    h3 {
+      margin: 20px 0px 5px 0px;
+      span {
+        color: gray;
+        font-size: smaller;
+        font-weight: 400;
+
+        a {
+          color: gray;
+          text-decoration: none;
+          word-break: break-all;
+
+          &:visited {
+            color: gray;
+          }
+        }
+      }
+    }
+    .summary {
+      color: gray;
+    }
+
+    .comments {
+      .comment {
+        margin-top: 20px;
+
+        .comment-by {
+          color: gray;
+        }
+
+        .comment-content {
+          margin-top: 5px;
+          line-height: 1.25;
+
+          p {
+            margin: 10px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .stories {
+    padding: 20px;
+
+    .story {
+      margin: 0 auto;
+
+      border-top: 1px solid rgba(gray, 0.2);
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}
