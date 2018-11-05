@@ -45,6 +45,9 @@
           margin-top: 5px;
           line-height: 1.25;
 
+          a {
+            word-break: break-all;
+          }
           p {
             margin: 10px 0px;
           }
