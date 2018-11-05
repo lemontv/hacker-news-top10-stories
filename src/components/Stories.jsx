@@ -27,7 +27,10 @@ const Story = ({story, comments}) => (
   <div className='story'>
     <h3>
       {story.title}
-      <span>(<a rel='noopener noreferrer' href={story.url} target='_blank'>{new URL(story.url).host}</a>)</span>
+      {
+        story.url &&
+        <span>(<a rel='noopener noreferrer' href={story.url} target='_blank'>{new URL(story.url).host}</a>)</span>
+      }
     </h3>
 
     <div className='summary'>
